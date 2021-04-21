@@ -1,4 +1,4 @@
-backend/*
-frontend/*
+backend/app/*
+frontend/app/*
 db/*
 .env
