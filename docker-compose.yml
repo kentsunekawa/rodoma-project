@@ -15,6 +15,9 @@ services:
     working_dir: "/var/www/html"
     volumes:
       - ./backend/app:/var/www/html
+      - ./backend/php.ini:/usr/local/etc/php/php.ini
+      - ./backend/php.ini:/usr/local/etc/php/php.ini-development
+      - ./backend/php.ini:/usr/local/etc/php/php.ini-production
   web:
     build: ./server
     ports:
